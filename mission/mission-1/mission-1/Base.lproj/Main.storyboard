@@ -54,7 +54,7 @@
                                 <rect key="frame" x="36" y="344" width="302" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTd-rL-BcK">
                                 <rect key="frame" x="36" y="547" width="296" height="40"/>
@@ -81,6 +81,7 @@
                     <navigationItem key="navigationItem" id="sbF-HK-wqV"/>
                     <connections>
                         <outlet property="idTextField" destination="PGj-4X-IOA" id="bMV-Le-yKJ"/>
+                        <outlet property="loginButton" destination="fio-cX-6Ev" id="Hu2-Av-rlt"/>
                         <outlet property="passwordTextField" destination="N44-z3-12F" id="1hr-Qf-OUq"/>
                         <outlet property="subtitleLabel" destination="N0t-W0-gc1" id="Fb3-Xv-0e5"/>
                     </connections>
@@ -123,7 +124,7 @@
                                 <rect key="frame" x="36" y="272" width="302" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCU-dS-JnD">
                                 <rect key="frame" x="36" y="308" width="296" height="1"/>
@@ -134,7 +135,7 @@
                                 <rect key="frame" x="36" y="351" width="302" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LS1-b7-pMi">
                                 <rect key="frame" x="36" y="387" width="296" height="1"/>
@@ -171,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gan-E6-l2U">
-                                <rect key="frame" x="39" y="246" width="288" height="112"/>
+                                <rect key="frame" x="39" y="246" width="288" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

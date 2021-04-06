@@ -16,12 +16,15 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
 
     @IBAction func makeNewAccount(_ sender: Any) {
         //비밀번호 제대로 쳤는지 확인
+        
+        if checkAllText() == false{
+            return
+        }
+        
         if let firstPW = passwordTextField.text,
            let secondPW = checkPasswordTextField.text{
             if firstPW != secondPW{
@@ -38,6 +41,22 @@ class SignUpVC: UIViewController {
         nextVC.modalPresentationStyle = .fullScreen
         nextVC.setIdText(id: idTextField.text)
         present(nextVC, animated: true, completion: nil)
+    }
+    
+    func checkAllText() -> Bool{
+        if idTextField.text == "" ||
+        passwordTextField.text == "" ||
+            checkPasswordTextField.text == "" {
+            return false
+        }
+        
+        return true
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.navigationController?.popViewController(animated: true)
+        print("pop 된다")
     }
     
 }

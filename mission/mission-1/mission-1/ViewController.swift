@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var idTextField: UITextField!
-    @IBOutlet var passwordTextField: UITextField!
-    @IBOutlet var subtitleLabel: UILabel!
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,22 +20,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchUpLogin(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else {
-            return
+        if idTextField.text != "" && passwordTextField.text != ""{
+            guard let nextVC = self.storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else {
+                return
+            }
+            nextVC.setIdText(id: idTextField.text)
+            nextVC.modalPresentationStyle = .fullScreen
+            self.present(nextVC, animated: true, completion: nil)
         }
-        nextVC.setIdText(id: idTextField.text)
-        nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true, completion: nil)
-        
     }
     
     @IBAction func makeNewAccount(_ sender: Any) {
-        
         guard let nextVC = self.storyboard?.instantiateViewController(identifier: "SignUpVC") as? SignUpVC else {
             return
         }
         self.navigationController?.pushViewController(nextVC, animated: true)
-        
     }
     
     func setSubTitle(){

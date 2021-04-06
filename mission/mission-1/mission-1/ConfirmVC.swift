@@ -11,13 +11,13 @@ class ConfirmVC: UIViewController {
     
     @IBOutlet var idLabal: UILabel!
     var id : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setIdLabel()
     }
 
     func setIdText(id: String?){
-        
         if let userId = id{
             self.id = userId
         }else{
@@ -26,12 +26,14 @@ class ConfirmVC: UIViewController {
     }
     
     func setIdLabel(){
-        idLabal.text = "\(id)님\n환영합니다"
         idLabal.numberOfLines = 0
+        idLabal.text = "\(id)님\n환영합니다"
     }
     
     @IBAction func touchUpConfirm(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+
+        dismiss(animated: true, completion: nil)
+        print("dismiss 완료")
     }
 
 }
