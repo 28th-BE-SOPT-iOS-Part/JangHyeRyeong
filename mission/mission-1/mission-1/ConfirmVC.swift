@@ -8,22 +8,30 @@
 import UIKit
 
 class ConfirmVC: UIViewController {
-
+    
+    @IBOutlet var idLabal: UILabel!
+    var id : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        setIdLabel()
+    }
 
-        // Do any additional setup after loading the view.
+    func setIdText(id: String?){
+        
+        if let userId = id{
+            self.id = userId
+        }else{
+            self.id = "이름이 입력되지 않음"
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setIdLabel(){
+        idLabal.text = "\(id)님\n환영합니다"
+        idLabal.numberOfLines = 0
     }
-    */
+    
+    @IBAction func touchUpConfirm(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

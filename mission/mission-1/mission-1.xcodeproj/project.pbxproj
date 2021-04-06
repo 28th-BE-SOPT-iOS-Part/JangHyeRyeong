@@ -13,6 +13,8 @@
 		3CA67C12261BFD4B0090962B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA67C10261BFD4B0090962B /* Main.storyboard */; };
 		3CA67C14261BFD4D0090962B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA67C13261BFD4D0090962B /* Assets.xcassets */; };
 		3CA67C17261BFD4D0090962B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA67C15261BFD4D0090962B /* LaunchScreen.storyboard */; };
+		3CA67C20261C00360090962B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA67C1F261C00360090962B /* SignUpVC.swift */; };
+		3CA67C23261C00820090962B /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA67C22261C00820090962B /* ConfirmVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3CA67C13261BFD4D0090962B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA67C16261BFD4D0090962B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CA67C18261BFD4D0090962B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA67C1F261C00360090962B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		3CA67C22261C00820090962B /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				3CA67C0C261BFD4B0090962B /* SceneDelegate.swift */,
 				3CA67C0E261BFD4B0090962B /* ViewController.swift */,
 				3CA67C10261BFD4B0090962B /* Main.storyboard */,
+				3CA67C22261C00820090962B /* ConfirmVC.swift */,
+				3CA67C1F261C00360090962B /* SignUpVC.swift */,
 				3CA67C13261BFD4D0090962B /* Assets.xcassets */,
 				3CA67C15261BFD4D0090962B /* LaunchScreen.storyboard */,
 				3CA67C18261BFD4D0090962B /* Info.plist */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA67C23261C00820090962B /* ConfirmVC.swift in Sources */,
+				3CA67C20261C00360090962B /* SignUpVC.swift in Sources */,
 				3CA67C0F261BFD4B0090962B /* ViewController.swift in Sources */,
 				3CA67C0B261BFD4B0090962B /* AppDelegate.swift in Sources */,
 				3CA67C0D261BFD4B0090962B /* SceneDelegate.swift in Sources */,
