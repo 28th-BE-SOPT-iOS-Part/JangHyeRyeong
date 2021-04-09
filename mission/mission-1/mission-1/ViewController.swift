@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchUpLogin(_ sender: Any) {
+        print(idTextField.text)
+        print(passwordTextField.text)
+        
         if idTextField.text != "" && passwordTextField.text != ""{
             guard let nextVC = self.storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else {
                 return
