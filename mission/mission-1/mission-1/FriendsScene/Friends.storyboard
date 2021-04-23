@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m61-db-cv6">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FriendsVC-->
+        <scene sceneID="Gg8-RI-ItS">
+            <objects>
+                <viewController storyboardIdentifier="FriendsVC" id="m61-db-cv6" customClass="FriendsVC" customModule="mission_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hL6-Q2-57K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVu-FZ-hUg">
+                                <rect key="frame" x="14" y="59" width="39" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-9R-Lfc">
+                                <rect key="frame" x="13" y="104" width="59" height="58"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kAc-ip-yHL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cuW-9R-Lfc" firstAttribute="leading" secondItem="kAc-ip-yHL" secondAttribute="leading" constant="13" id="KZg-sD-0Na"/>
+                            <constraint firstItem="DVu-FZ-hUg" firstAttribute="leading" secondItem="kAc-ip-yHL" secondAttribute="leading" constant="14" id="MKY-nv-xHy"/>
+                            <constraint firstItem="kAc-ip-yHL" firstAttribute="trailing" secondItem="cuW-9R-Lfc" secondAttribute="trailing" constant="303" id="TBC-mS-hso"/>
+                            <constraint firstItem="DVu-FZ-hUg" firstAttribute="top" secondItem="kAc-ip-yHL" secondAttribute="top" constant="15" id="ToY-5C-hfp"/>
+                            <constraint firstItem="cuW-9R-Lfc" firstAttribute="top" secondItem="DVu-FZ-hUg" secondAttribute="bottom" constant="18" id="X34-rv-rZM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="Q3T-tl-u2W">
+                        <imageReference key="image" image="person" catalog="system" symbolScale="large"/>
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="profileImageView" destination="cuW-9R-Lfc" id="eb7-eE-Va6"/>
+                        <outlet property="tabbarItem" destination="Q3T-tl-u2W" id="dAa-Y0-fYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ph-eW-aep" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282.60869565217394" y="140.625"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="GJc-9y-D3T">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="1pr-cV-RZD" customClass="ProfileVC" customModule="mission_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h6S-6Z-srB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="uDU-Q9-cyJ">
+                                <rect key="frame" x="158" y="514.66666666666663" width="59" height="58"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileTalkImg" translatesAutoresizingMaskIntoConstraints="NO" id="Upp-rj-jzD">
+                                <rect key="frame" x="77.333333333333329" y="681" width="20.333333333333329" height="19"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileEditImg" translatesAutoresizingMaskIntoConstraints="NO" id="FVC-Pc-KWq">
+                                <rect key="frame" x="177.66666666666666" y="678.66666666666663" width="19.666666666666657" height="21.333333333333371"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileStoryImg" translatesAutoresizingMaskIntoConstraints="NO" id="xN4-F9-dF5">
+                                <rect key="frame" x="275" y="676.66666666666663" width="20.333333333333314" height="23.333333333333371"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김솝트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obF-00-ee2">
+                                <rect key="frame" x="164" y="580.66666666666663" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나와의 채팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tte-4K-j6y">
+                                <rect key="frame" x="64" y="708" width="47" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 편집" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwq-9P-0JA">
+                                <rect key="frame" x="160" y="708" width="55" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카카오스토리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylB-Zx-qKo">
+                                <rect key="frame" x="259" y="708" width="52" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYH-Jb-1uW">
+                                <rect key="frame" x="0.0" y="643.66666666666663" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.62352941176470589" green="0.65490196078431373" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="c0R-ES-MV4"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKA-ah-eUO">
+                                <rect key="frame" x="18" y="58" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="MJn-jf-fAd"/>
+                                    <constraint firstAttribute="width" secondItem="QKA-ah-eUO" secondAttribute="height" multiplier="1:1" id="ULZ-4h-Ie0"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="profileCloseBtn"/>
+                                <connections>
+                                    <action selector="closeProfileView:" destination="1pr-cV-RZD" eventType="touchUpInside" id="1Qd-XP-IFh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d6U-8d-Lwg"/>
+                        <color key="backgroundColor" red="0.52941176470588236" green="0.56862745098039214" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="obF-00-ee2" firstAttribute="top" secondItem="uDU-Q9-cyJ" secondAttribute="bottom" constant="8" id="5gx-rX-uie"/>
+                            <constraint firstItem="xN4-F9-dF5" firstAttribute="centerX" secondItem="ylB-Zx-qKo" secondAttribute="centerX" id="Cx6-rl-h38"/>
+                            <constraint firstItem="tte-4K-j6y" firstAttribute="top" secondItem="Upp-rj-jzD" secondAttribute="bottom" constant="8" id="GcM-Oc-Cws"/>
+                            <constraint firstItem="Upp-rj-jzD" firstAttribute="centerX" secondItem="tte-4K-j6y" secondAttribute="centerX" id="Jzw-Yl-lzL"/>
+                            <constraint firstItem="Bwq-9P-0JA" firstAttribute="top" secondItem="FVC-Pc-KWq" secondAttribute="bottom" constant="8" id="KjC-Dc-MwQ"/>
+                            <constraint firstItem="oYH-Jb-1uW" firstAttribute="leading" secondItem="h6S-6Z-srB" secondAttribute="leading" id="P5X-bd-g91"/>
+                            <constraint firstItem="ylB-Zx-qKo" firstAttribute="top" secondItem="xN4-F9-dF5" secondAttribute="bottom" constant="8" id="aQp-X4-oEc"/>
+                            <constraint firstItem="d6U-8d-Lwg" firstAttribute="trailing" secondItem="Bwq-9P-0JA" secondAttribute="trailing" constant="160" id="bij-Ru-UXt"/>
+                            <constraint firstItem="d6U-8d-Lwg" firstAttribute="bottom" secondItem="Bwq-9P-0JA" secondAttribute="bottom" constant="58" id="by7-vR-QV3"/>
+                            <constraint firstItem="d6U-8d-Lwg" firstAttribute="bottom" secondItem="ylB-Zx-qKo" secondAttribute="bottom" constant="58" id="c70-GP-EMz"/>
+                            <constraint firstItem="QKA-ah-eUO" firstAttribute="leading" secondItem="d6U-8d-Lwg" secondAttribute="leading" constant="18" id="cYk-A9-c4W"/>
+                            <constraint firstItem="obF-00-ee2" firstAttribute="centerX" secondItem="oYH-Jb-1uW" secondAttribute="centerX" id="cju-uF-5YM"/>
+                            <constraint firstItem="xN4-F9-dF5" firstAttribute="top" secondItem="oYH-Jb-1uW" secondAttribute="bottom" constant="32" id="hCC-lS-jJy"/>
+                            <constraint firstItem="d6U-8d-Lwg" firstAttribute="trailing" secondItem="ylB-Zx-qKo" secondAttribute="trailing" constant="64" id="m3z-rG-5Js"/>
+                            <constraint firstItem="oYH-Jb-1uW" firstAttribute="top" secondItem="obF-00-ee2" secondAttribute="bottom" constant="42" id="mfA-EN-tIN"/>
+                            <constraint firstAttribute="trailing" secondItem="oYH-Jb-1uW" secondAttribute="trailing" id="obe-CU-GF9"/>
+                            <constraint firstItem="FVC-Pc-KWq" firstAttribute="centerX" secondItem="Bwq-9P-0JA" secondAttribute="centerX" id="ocI-cJ-SNe"/>
+                            <constraint firstItem="QKA-ah-eUO" firstAttribute="top" secondItem="d6U-8d-Lwg" secondAttribute="top" constant="14" id="sJ6-6K-yqw"/>
+                            <constraint firstItem="tte-4K-j6y" firstAttribute="leading" secondItem="d6U-8d-Lwg" secondAttribute="leading" constant="64" id="sLV-Ur-umg"/>
+                            <constraint firstItem="Bwq-9P-0JA" firstAttribute="leading" secondItem="d6U-8d-Lwg" secondAttribute="leading" constant="160" id="sZH-EX-iA5"/>
+                            <constraint firstItem="uDU-Q9-cyJ" firstAttribute="centerX" secondItem="obF-00-ee2" secondAttribute="centerX" id="uGd-BN-qPb"/>
+                            <constraint firstItem="d6U-8d-Lwg" firstAttribute="bottom" secondItem="tte-4K-j6y" secondAttribute="bottom" constant="58" id="wEA-Oo-NF7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="QKA-ah-eUO" id="rRD-Rd-bsr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHD-bF-7Pg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.5999999999999" y="139.65517241379311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="friendtabProfileImg" width="59" height="58"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="profileCloseBtn" width="14" height="14"/>
+        <image name="profileEditImg" width="19.666666030883789" height="21.333333969116211"/>
+        <image name="profileStoryImg" width="20.333333969116211" height="23.333333969116211"/>
+        <image name="profileTalkImg" width="20.333333969116211" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
