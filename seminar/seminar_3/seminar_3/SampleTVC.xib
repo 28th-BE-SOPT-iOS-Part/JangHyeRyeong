@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleTVC" rowHeight="106" id="KGk-i7-Jjw" customClass="SampleTVC" customModule="seminar_3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptAppIcon1" translatesAutoresizingMaskIntoConstraints="NO" id="l9m-WR-0Fe">
+                        <rect key="frame" x="18" y="13" width="80" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6O-WZ-GJG">
+                        <rect key="frame" x="118" y="13" width="34" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dO2-OJ-Wlu">
+                        <rect key="frame" x="118" y="35" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eE-0o-3Zo">
+                        <rect key="frame" x="118" y="68" width="65" height="25"/>
+                        <state key="normal" image="downloadBtn"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="l9m-WR-0Fe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="16a-Qx-baO"/>
+                    <constraint firstItem="4eE-0o-3Zo" firstAttribute="leading" secondItem="l9m-WR-0Fe" secondAttribute="trailing" constant="20" id="6Oq-9b-qtA"/>
+                    <constraint firstItem="l9m-WR-0Fe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="77f-Cn-CS9"/>
+                    <constraint firstItem="J6O-WZ-GJG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="IFi-uT-r1X"/>
+                    <constraint firstItem="dO2-OJ-Wlu" firstAttribute="top" secondItem="J6O-WZ-GJG" secondAttribute="bottom" constant="6" id="cSg-Iw-M0K"/>
+                    <constraint firstItem="dO2-OJ-Wlu" firstAttribute="leading" secondItem="l9m-WR-0Fe" secondAttribute="trailing" constant="20" id="doc-AF-Cx5"/>
+                    <constraint firstAttribute="bottom" secondItem="4eE-0o-3Zo" secondAttribute="bottom" constant="13" id="wbT-uK-BSy"/>
+                    <constraint firstAttribute="bottom" secondItem="l9m-WR-0Fe" secondAttribute="bottom" constant="13" id="xWq-Xd-nDg"/>
+                    <constraint firstItem="J6O-WZ-GJG" firstAttribute="leading" secondItem="l9m-WR-0Fe" secondAttribute="trailing" constant="20" id="zcd-Ih-u9a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconImageView" destination="l9m-WR-0Fe" id="LB0-Ex-OvT"/>
+                <outlet property="selectionButton" destination="4eE-0o-3Zo" id="fT7-ij-1a7"/>
+                <outlet property="subtitleLabel" destination="dO2-OJ-Wlu" id="dP4-rs-DaF"/>
+                <outlet property="titleLabel" destination="J6O-WZ-GJG" id="YV9-0k-OTX"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="124.55357142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downloadBtn" width="65" height="25"/>
+        <image name="soptAppIcon1" width="80" height="80"/>
+    </resources>
+</document>
