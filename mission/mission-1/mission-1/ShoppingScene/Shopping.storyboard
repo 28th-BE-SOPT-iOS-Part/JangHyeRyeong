@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="W3Y-yh-eH9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="bag" catalog="system" id="rbo-NH-syx"/>
+                    <tabBarItem key="tabBarItem" title="" image="shopTabIcon" id="rbo-NH-syx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tabbarItem" destination="rbo-NH-syx" id="9nX-GT-ab0"/>
@@ -30,7 +30,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="shopTabIcon" width="19.333333969116211" height="19.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

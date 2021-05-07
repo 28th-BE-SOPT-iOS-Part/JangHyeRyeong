@@ -13,7 +13,7 @@ class ShoppingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "bag.fill")
+        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "shopTabIconSelected")
     }
     
 
