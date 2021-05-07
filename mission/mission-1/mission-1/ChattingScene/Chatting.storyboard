@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="UYG-Mv-fuI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="message" catalog="system" id="k2k-6P-3rd"/>
+                    <tabBarItem key="tabBarItem" title="" image="messageTabIcon" id="k2k-6P-3rd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tabbarItem" destination="k2k-6P-3rd" id="NOK-VA-3a4"/>
@@ -26,11 +26,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LCL-0t-Lj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="132"/>
+            <point key="canvasLocation" x="-87" y="149"/>
         </scene>
     </scenes>
     <resources>
-        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="messageTabIcon" width="20.5" height="19.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -12,7 +12,7 @@ class ChattingVC: UIViewController {
     @IBOutlet weak var tabbarItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "message.fill")
+        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "messageTabIconSelected")
         
     }
     
