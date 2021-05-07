@@ -9,17 +9,32 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var closeButton: UIButton!
+    
+    var profile: FriendDataModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setContent()
     }
     
     @IBAction func closeProfileView(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-   
+}
 
+//MARK: UI
+extension ProfileVC{
+    func setProfileData(profile: FriendDataModel?){
+        self.profile = profile
+    }
+    
+    func setContent(){
+        if let profile = self.profile{
+            profileImageView.image = profile.image
+            nameLabel.text = profile.name
+        }
+    }
 }
