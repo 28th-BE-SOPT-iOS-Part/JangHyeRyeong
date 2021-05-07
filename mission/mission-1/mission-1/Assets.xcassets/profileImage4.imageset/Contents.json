@@ -1,18 +1,18 @@
 {
   "images" : [
     {
+      "filename" : "profileImage4.png",
       "scale" : "1x",
-      "filename" : "friendtabProfileImg.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "friendtabProfileImg@2x.png",
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "profileImage4@2x.png"
     },
     {
+      "filename" : "profileImage4@3x.png",
       "scale" : "3x",
-      "filename" : "friendtabProfileImg@3x.png",
       "idiom" : "universal"
     }
   ],

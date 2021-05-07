@@ -1,19 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "shopTabIconSelected.png",
       "scale" : "1x",
-      "filename" : "friendtabProfileImg.png",
       "idiom" : "universal"
     },
     {
-      "filename" : "friendtabProfileImg@2x.png",
       "idiom" : "universal",
+      "filename" : "shopTabIconSelected@2x.png",
       "scale" : "2x"
     },
     {
       "scale" : "3x",
-      "filename" : "friendtabProfileImg@3x.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "shopTabIconSelected@3x.png"
     }
   ],
   "info" : {
