@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="g4y-i6-E2a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="tag" catalog="system" id="Zar-On-7SL"/>
+                    <tabBarItem key="tabBarItem" title="" image="searchTabIcon" id="Zar-On-7SL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tabbarItem" destination="Zar-On-7SL" id="muM-Ce-qwp"/>
@@ -30,7 +30,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tag" catalog="system" width="128" height="119"/>
+        <image name="searchTabIcon" width="15" height="17.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

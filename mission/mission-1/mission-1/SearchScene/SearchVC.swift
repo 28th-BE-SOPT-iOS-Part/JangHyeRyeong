@@ -12,7 +12,7 @@ class SearchVC: UIViewController {
     @IBOutlet weak var tabbarItem: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "tag.fill")
+        setClickedTabbarItem(tabItem: tabbarItem, ImageName: "searchTabIconSelected")
         
     }
     
