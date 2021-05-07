@@ -15,6 +15,13 @@
 		3C0AB1752632F912001C6869 /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AB1742632F912001C6869 /* ShoppingVC.swift */; };
 		3C0AB1782632F969001C6869 /* PlusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AB1772632F969001C6869 /* PlusVC.swift */; };
 		3C0AB17D2632FF69001C6869 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0AB17C2632FF69001C6869 /* TabbarController.swift */; };
+		3C269D0B2644F2EE00A1FF0A /* FreindsProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C269D092644F2EE00A1FF0A /* FreindsProfileTVC.swift */; };
+		3C269D0C2644F2EE00A1FF0A /* FreindsProfileTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C269D0A2644F2EE00A1FF0A /* FreindsProfileTVC.xib */; };
+		3C269D0F2644F51000A1FF0A /* FriendDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C269D0E2644F51000A1FF0A /* FriendDataModel.swift */; };
+		3C269D152644F7D200A1FF0A /* UserProfileTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C269D132644F7D200A1FF0A /* UserProfileTVC.swift */; };
+		3C269D162644F7D200A1FF0A /* UserProfileTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C269D142644F7D200A1FF0A /* UserProfileTVC.xib */; };
+		3C269D1F2645161000A1FF0A /* PlusItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C269D1D2645161000A1FF0A /* PlusItemCVC.swift */; };
+		3C269D202645161000A1FF0A /* PlusItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C269D1E2645161000A1FF0A /* PlusItemCVC.xib */; };
 		3CA67C0B261BFD4B0090962B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA67C0A261BFD4B0090962B /* AppDelegate.swift */; };
 		3CA67C0D261BFD4B0090962B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA67C0C261BFD4B0090962B /* SceneDelegate.swift */; };
 		3CA67C0F261BFD4B0090962B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA67C0E261BFD4B0090962B /* ViewController.swift */; };
@@ -40,6 +47,13 @@
 		3C0AB1742632F912001C6869 /* ShoppingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
 		3C0AB1772632F969001C6869 /* PlusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusVC.swift; sourceTree = "<group>"; };
 		3C0AB17C2632FF69001C6869 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		3C269D092644F2EE00A1FF0A /* FreindsProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreindsProfileTVC.swift; sourceTree = "<group>"; };
+		3C269D0A2644F2EE00A1FF0A /* FreindsProfileTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreindsProfileTVC.xib; sourceTree = "<group>"; };
+		3C269D0E2644F51000A1FF0A /* FriendDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDataModel.swift; sourceTree = "<group>"; };
+		3C269D132644F7D200A1FF0A /* UserProfileTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTVC.swift; sourceTree = "<group>"; };
+		3C269D142644F7D200A1FF0A /* UserProfileTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTVC.xib; sourceTree = "<group>"; };
+		3C269D1D2645161000A1FF0A /* PlusItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusItemCVC.swift; sourceTree = "<group>"; };
+		3C269D1E2645161000A1FF0A /* PlusItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusItemCVC.xib; sourceTree = "<group>"; };
 		3CA67C07261BFD4B0090962B /* mission-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mission-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA67C0A261BFD4B0090962B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA67C0C261BFD4B0090962B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +153,11 @@
 				3CE583D42632767900CC76BD /* Friends.storyboard */,
 				3C0AB1642632F18E001C6869 /* FriendsVC.swift */,
 				3C0AB1672632F1A2001C6869 /* ProfileVC.swift */,
+				3C269D092644F2EE00A1FF0A /* FreindsProfileTVC.swift */,
+				3C269D0A2644F2EE00A1FF0A /* FreindsProfileTVC.xib */,
+				3C269D0E2644F51000A1FF0A /* FriendDataModel.swift */,
+				3C269D132644F7D200A1FF0A /* UserProfileTVC.swift */,
+				3C269D142644F7D200A1FF0A /* UserProfileTVC.xib */,
 			);
 			path = FriendsScene;
 			sourceTree = "<group>";
@@ -175,6 +194,8 @@
 			children = (
 				3CE583E02632769700CC76BD /* Plus.storyboard */,
 				3C0AB1772632F969001C6869 /* PlusVC.swift */,
+				3C269D1D2645161000A1FF0A /* PlusItemCVC.swift */,
+				3C269D1E2645161000A1FF0A /* PlusItemCVC.xib */,
 			);
 			path = PlusScene;
 			sourceTree = "<group>";
@@ -238,9 +259,12 @@
 			files = (
 				3CE583D82632768000CC76BD /* Chatting.storyboard in Resources */,
 				3CE583E12632769700CC76BD /* Plus.storyboard in Resources */,
+				3C269D0C2644F2EE00A1FF0A /* FreindsProfileTVC.xib in Resources */,
+				3C269D202645161000A1FF0A /* PlusItemCVC.xib in Resources */,
 				3CE583CC2632743D00CC76BD /* Tabbar.storyboard in Resources */,
 				3CE583DE2632769000CC76BD /* Shopping.storyboard in Resources */,
 				3CE583D52632767900CC76BD /* Friends.storyboard in Resources */,
+				3C269D162644F7D200A1FF0A /* UserProfileTVC.xib in Resources */,
 				3CA67C17261BFD4D0090962B /* LaunchScreen.storyboard in Resources */,
 				3CE583DB2632768700CC76BD /* Search.storyboard in Resources */,
 				3CA67C14261BFD4D0090962B /* Assets.xcassets in Resources */,
@@ -256,15 +280,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CA67C23261C00820090962B /* ConfirmVC.swift in Sources */,
+				3C269D0F2644F51000A1FF0A /* FriendDataModel.swift in Sources */,
 				3C0AB1752632F912001C6869 /* ShoppingVC.swift in Sources */,
 				3CA67C20261C00360090962B /* SignUpVC.swift in Sources */,
 				3C0AB17D2632FF69001C6869 /* TabbarController.swift in Sources */,
 				3C0AB1682632F1A2001C6869 /* ProfileVC.swift in Sources */,
 				3C0AB1652632F18E001C6869 /* FriendsVC.swift in Sources */,
 				3C0AB16C2632F7C1001C6869 /* Extensions+UIViewController.swift in Sources */,
+				3C269D0B2644F2EE00A1FF0A /* FreindsProfileTVC.swift in Sources */,
 				3CA67C0F261BFD4B0090962B /* ViewController.swift in Sources */,
+				3C269D1F2645161000A1FF0A /* PlusItemCVC.swift in Sources */,
 				3C0AB1722632F8B9001C6869 /* SearchVC.swift in Sources */,
 				3C0AB1782632F969001C6869 /* PlusVC.swift in Sources */,
+				3C269D152644F7D200A1FF0A /* UserProfileTVC.swift in Sources */,
 				3CA67C0B261BFD4B0090962B /* AppDelegate.swift in Sources */,
 				3C0AB16F2632F864001C6869 /* ChattingVC.swift in Sources */,
 				3CA67C0D261BFD4B0090962B /* SceneDelegate.swift in Sources */,
