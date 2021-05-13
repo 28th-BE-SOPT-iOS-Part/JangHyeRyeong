@@ -32,17 +32,6 @@ class SignUpVC: UIViewController {
                              okAction: { _ in
                                self.signUpAction()
                              })
-
-        
-        
-       
-        
-        let storyboard = UIStoryboard(name: "Tabbar", bundle: nil)
-        guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarController") as? TabbarController else {
-            return
-        }
-        nextVC.modalPresentationStyle = .fullScreen
-        present(nextVC, animated: true, completion: nil)
     }
 
     
@@ -55,7 +44,10 @@ class SignUpVC: UIViewController {
             case .success(let message):
                 if let message = message as? String{
                     self.makeAlert(title: "알림",
-                                   message: message)
+                                   message: message,
+                                   okAction: { _ in
+                                    self.goToFriendView()
+                                   }, completion: nil)
                 }
                 
             case .requestErr(let message):
@@ -70,6 +62,14 @@ class SignUpVC: UIViewController {
                 print("ERROR")
             }
         }
+    }
+    
+    func goToFriendView(){
+        let storyboard = UIStoryboard(name: "Tabbar", bundle: nil)
+        guard let nextVC = storyboard.instantiateViewController(identifier: "TabbarController")
+                as? TabbarController else {return}
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true, completion: nil)
     }
     
     
