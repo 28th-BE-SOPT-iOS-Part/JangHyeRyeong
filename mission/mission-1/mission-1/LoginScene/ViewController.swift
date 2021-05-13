@@ -40,7 +40,10 @@ class ViewController: UIViewController {
                 if let message = message as? String{
                     
                     self.makeAlert(title: "알림",
-                                   message: message)
+                                   message: message,
+                                   okAction: { _ in
+                                    self.goToFriendView()
+                                   }, completion: nil)
                 }
                 
             case .requestErr(let message):
