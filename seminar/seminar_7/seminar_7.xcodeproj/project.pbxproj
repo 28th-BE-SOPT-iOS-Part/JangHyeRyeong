@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		3CC4CEB32661DA1400510C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4CEB12661DA1400510C28 /* Main.storyboard */; };
 		3CC4CEB52661DA1700510C28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4CEB42661DA1700510C28 /* Assets.xcassets */; };
 		3CC4CEB82661DA1700510C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4CEB62661DA1700510C28 /* LaunchScreen.storyboard */; };
+		3CC4CEC02661DB8A00510C28 /* 7thSeminar_Lottie_sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CC4CEBF2661DB8A00510C28 /* 7thSeminar_Lottie_sample.json */; };
 		D8BCDE498363A522626F3B94 /* Pods_seminar_7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D695672B5EA39F677630CA /* Pods_seminar_7.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		3CC4CEB42661DA1700510C28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC4CEB72661DA1700510C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CC4CEB92661DA1700510C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC4CEBF2661DB8A00510C28 /* 7thSeminar_Lottie_sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 7thSeminar_Lottie_sample.json; sourceTree = "<group>"; };
 		5546236054F0D2B4DEC775C6 /* Pods-seminar_7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-seminar_7.debug.xcconfig"; path = "Target Support Files/Pods-seminar_7/Pods-seminar_7.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D695672B5EA39F677630CA /* Pods_seminar_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_seminar_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 		3CC4CEAA2661DA1400510C28 /* seminar_7 */ = {
 			isa = PBXGroup;
 			children = (
+				3CC4CEBF2661DB8A00510C28 /* 7thSeminar_Lottie_sample.json */,
 				3CC4CEAB2661DA1400510C28 /* AppDelegate.swift */,
 				3CC4CEAD2661DA1400510C28 /* SceneDelegate.swift */,
 				3CC4CEAF2661DA1400510C28 /* ViewController.swift */,
@@ -80,7 +83,6 @@
 				5546236054F0D2B4DEC775C6 /* Pods-seminar_7.debug.xcconfig */,
 				1E2C21F57AC842EC183EAE01 /* Pods-seminar_7.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC4CEC02661DB8A00510C28 /* 7thSeminar_Lottie_sample.json in Resources */,
 				3CC4CEB82661DA1700510C28 /* LaunchScreen.storyboard in Resources */,
 				3CC4CEB52661DA1700510C28 /* Assets.xcassets in Resources */,
 				3CC4CEB32661DA1400510C28 /* Main.storyboard in Resources */,
